@@ -1,0 +1,19 @@
+{
+  "name": "webduino-module-uv",
+  "description": "UV Module for Webduino",
+  "main": "uv.js",
+  "authors": "",
+  "license": "MIT",
+  "keywords": [
+    "arduino",
+    "webduino",
+    "UV"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
