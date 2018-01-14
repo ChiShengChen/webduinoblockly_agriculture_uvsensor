@@ -14,6 +14,7 @@ Blockly.Blocks['uv_setup'] = {
  this.setTooltip("");
  this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl);
   }
+};
 
 Blockly.Blocks['uv_pin'] = {
   init: function() {
@@ -24,7 +25,7 @@ Blockly.Blocks['uv_pin'] = {
     this.setOutput(true, null);
     this.setColour(230);
  this.setTooltip("");
- this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl);
+ this.setHelpUrl( );
   }
 };
 
@@ -33,12 +34,14 @@ Blockly.Blocks['uv_sencing'] = {
     this.appendValueInput("time")
         .setCheck(null)
         .appendField(new Blockly.FieldVariable("uv"), "uv")
-        .appendField(Blockly.Msg.WEBDUINO_UV_START, "開始偵測");
+        .appendField("開始偵測");
     this.appendDummyInput()
-        .appendField(Blockly.Msg.WEBDUINO_UV_GET_TIME , "毫(1/1000)秒偵測一次");
+        .appendField("毫(1/1000)秒偵測一次");
     this.appendStatementInput("uv_sencing_go")
         .setCheck(null)
-        .appendField(Blockly.Msg.WEBDUINO_UV_DO, "執行");
+        .appendField("執行");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
     this.setColour(65);
  this.setTooltip("");
  this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl);
