@@ -34,12 +34,12 @@ Blockly.Blocks['uv_sencing'] = {
     this.appendValueInput("time")
         .setCheck(null)
         .appendField(new Blockly.FieldVariable("uv"), "uv")
-        .appendField("開始偵測");
+        .appendField(Blockly.Msg.WEBDUINO_UV_START, "開始偵測");
     this.appendDummyInput()
-        .appendField("毫(1/1000)秒偵測一次");
+        .appendField(Blockly.Msg.WEBDUINO_UV_GET_TIME, "毫(1/1000)秒偵測一次");
     this.appendStatementInput("uv_sencing_go")
         .setCheck(null)
-        .appendField("執行");
+        .appendField(Blockly.Msg.WEBDUINO_UV_DO, "執行");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(65);
