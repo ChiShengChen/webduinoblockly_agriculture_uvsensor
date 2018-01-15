@@ -1,7 +1,7 @@
 var mainUrl = 'https://tutorials.webduino.io/zh-tw/docs/';
 var utmUrl = '?utm_source=cloud-blockly&utm_medium=contextMenu&utm_campaign=tutorials';
 
-Blockly.Blocks['uv_setup'] = {
+/*Blockly.Blocks['uv_setup'] = {
   init: function() {
     this.appendValueInput("uv")
         .setCheck(null)
@@ -14,7 +14,7 @@ Blockly.Blocks['uv_setup'] = {
  this.setTooltip("");
  this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl);
   }
-};
+};*/
 
 Blockly.Blocks['uv_pin'] = {
   init: function() {
